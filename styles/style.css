@@ -1,0 +1,66 @@
+:root {
+  --header-right: #2e46cd;
+  --header-btn: #435cac;
+  --main-text-color: #fff;
+  --mine-el-color: #e4cf12;
+  --insuarence-color: #3462ec;
+  --order-background: #6379f1;
+  --order-circle: #e4cf12;
+  --order-arrow: #d4c42e;
+  --suuport-bacground: linear #fff #0035f2;
+  --support-header: #021f78;
+  --support-text: #3551a4;
+  --footer-backgrounf: #141e55;
+}
+/* Shared classes */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.block {
+  min-width: 100px;
+  max-width: 1920px;
+  border: 1px solid #000;
+}
+
+.text {
+  font: Mulish;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.title-1 {
+  font: Mulish;
+  font-weight: 800;
+  font-size: 73.33px;
+}
+
+.text-2 {
+  font: Mulish;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.title-2,
+.title-2-alt {
+  font: Mulish;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.title-2-alt {
+  color: var(--support-header);
+}
+
+/* .text-about {
+  font: Mulish;
+  font-weight: 400;
+  font-size: 20px;
+} */
+
+/* Specific classes */
+
+.insuarence.container {
+  background-color: var(--insuarence-color);
+}
