@@ -1,17 +1,23 @@
 :root {
   --header-right: #2e46cd;
   --header-btn: #435cac;
+  --header-btn-alt: #e4cf12;
   --main-text-color: #fff;
-  --mine-el-color: #e4cf12;
-  --insuarence-color: #3462ec;
+  --insuarence-header: #3462ec;
+  --insuarence-background: #edeeff;
   --order-background: #6379f1;
-  --order-circle: #e4cf12;
-  --order-arrow: #d4c42e;
-  --suuport-bacground: linear #fff #0035f2;
+  --suport-bacground: linear #e6e8ff #b4c0fc;
   --support-header: #021f78;
   --support-text: #3551a4;
+  --about-background: #6379f1;
   --footer-backgrounf: #141e55;
+  --support-background-alt: #e0e2ff;
 }
+
+body {
+  font-family: "Mulish", "Courier New", Courier, monospace;
+}
+
 /* Shared classes */
 .container {
   display: flex;
@@ -19,48 +25,113 @@
 }
 
 .block {
-  min-width: 100px;
-  max-width: 1920px;
-  border: 1px solid #000;
+  width: 1920px;
+  display: flex;
+}
+
+.col {
+  background-color: var(--about-background);
+  flex: 1;
+  padding: 30px;
+  margin: 30px;
+  border-top-right-radius: 25px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.left,
+.right {
+  flex: 1;
 }
 
 .text {
-  font: Mulish;
   font-weight: 500;
   font-size: 20px;
+  color: var(--main-text-color);
 }
 
-.title-1 {
-  font: Mulish;
-  font-weight: 800;
-  font-size: 73.33px;
+.insuarence-text {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--support-text);
 }
 
 .text-2 {
-  font: Mulish;
   font-weight: 400;
   font-size: 20px;
+  color: var(--main-text-color);
+}
+
+.title-1 {
+  font-weight: 800;
+  font-size: 73px;
 }
 
 .title-2,
 .title-2-alt {
-  font: Mulish;
   font-weight: 700;
   font-size: 64px;
+}
+
+.title-2 {
+  color: var(--main-text-color);
 }
 
 .title-2-alt {
   color: var(--support-header);
 }
 
-/* .text-about {
-  font: Mulish;
-  font-weight: 400;
-  font-size: 20px;
-} */
-
 /* Specific classes */
 
 .insuarence.container {
-  background-color: var(--insuarence-color);
+  background-color: var(--insuarence-background);
+}
+
+.order.container {
+  background-color: var(--order-background);
+}
+
+.support.container {
+  background-color: var(--support-background-alt);
+}
+
+.about.container {
+  background-color: var(--about-background);
+}
+
+.header.container {
+  margin-bottom: 5px;
+}
+
+.insuarence .left {
+}
+
+.insuarence-body {
+  color: var(--insuarence-header);
+  margin-bottom: 5px;
+}
+
+.order-header {
+  margin-top: 15px;
+}
+
+.order .right {
+}
+
+.support .left {
+}
+
+.app {
+  /* Untitled@2-1920x1009 1 */
+
+  position: absolute;
+  width: 1920px;
+  height: 1032px;
+  left: 0px;
+  top: -19px;
+
+  background: url(Untitled@2-1920x1009.jpg);
+}
+
+.app .left {
 }
