@@ -5,6 +5,7 @@
   --main-text-color: #fff;
   --insuarence-header: #3462ec;
   --insuarence-background: #edeeff;
+  --insuarence-btn-alt: #000;
   --order-background: #6379f1;
   --suport-bacground: linear #e6e8ff #b4c0fc;
   --support-header: #021f78;
@@ -22,11 +23,20 @@ body {
 .container {
   display: flex;
   justify-content: center;
+  padding: 0 90px;
 }
 
 .block {
   width: 1920px;
   display: flex;
+}
+
+.header.container {
+  color: var(--header-btn);
+}
+
+.contact {
+  color: var(--header-btn-alt);
 }
 
 .col {
@@ -99,8 +109,39 @@ body {
   background-color: var(--about-background);
 }
 
-.header.container {
-  margin-bottom: 5px;
+.header {
+  display: flex;
+  /* align-content: space-between; */
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 17px; */
+}
+
+.header:hover {
+  box-shadow: 0px 3px 10px 1px #00000085;
+}
+
+.header-alt:hover {
+  box-shadow: 0px 3px 10px 1px #00000085;
+}
+
+button {
+  color: var(--header-btn);
+  border: 1px solid var(--header-btn);
+  border-radius: 8px;
+  margin-right: 7%;
+}
+
+.footer-btns {
+}
+
+.header-logo {
+  margin: 10px 20px 10px 25px;
+}
+
+.contact {
+  display: flex;
+  align-items: end;
 }
 
 .insuarence .left {
@@ -109,6 +150,32 @@ body {
 .insuarence-body {
   color: var(--insuarence-header);
   margin-bottom: 5px;
+}
+
+.insuarence-btn {
+  display: inline-block;
+  width: 240px;
+  height: 60px;
+  padding: 16px;
+  border-radius: 9px;
+  background-color: var(--insuarence-header);
+  color: var(--main-text-color);
+  text-decoration: none;
+  text-align: center;
+}
+
+.insuarence-btn:hover {
+  color: var(--main-text-color);
+}
+
+.insuarence-btn-alt {
+  background-color: var(--main-text-color);
+  color: var(--insuarence-btn-alt);
+  border: 1px solid #000;
+}
+
+.insuarence-btn-alt:hover {
+  color: var(--insuarence-btn-alt);
 }
 
 .order-header {
@@ -122,15 +189,7 @@ body {
 }
 
 .app {
-  /* Untitled@2-1920x1009 1 */
-
-  position: absolute;
-  width: 1920px;
-  height: 1032px;
-  left: 0px;
-  top: -19px;
-
-  background: url(Untitled@2-1920x1009.jpg);
+  background: url("./../images/bg-app.svg");
 }
 
 .app .left {
