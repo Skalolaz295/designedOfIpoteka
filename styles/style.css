@@ -117,7 +117,15 @@ body {
   /* padding: 17px; */
 }
 
-.header:hover {
+.header-main:hover {
+  box-shadow: 0px 3px 10px 1px #00000085;
+}
+
+.header-services:hover {
+  box-shadow: 0px 3px 10px 1px #00000085;
+}
+
+.header-about:hover {
   box-shadow: 0px 3px 10px 1px #00000085;
 }
 
@@ -130,9 +138,6 @@ button {
   border: 1px solid var(--header-btn);
   border-radius: 8px;
   margin-right: 7%;
-}
-
-.footer-btns {
 }
 
 .header-logo {
@@ -189,8 +194,37 @@ button {
 }
 
 .app {
-  background: url("./../images/bg-app.svg");
+  background-color: #021f78;
+  background: url(../images/background-app.png) no-repeat center center fixed;
+  background-size: cover;
 }
 
-.app .left {
+.app-pic {
 }
+
+ul {
+  list-style: none;
+}
+
+.footer-btns {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-left {
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+
+/* .footer-btns {
+  display: inline-block;
+} */
