@@ -19,6 +19,10 @@ body {
   font-family: "Mulish", "Courier New", Courier, monospace;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Shared classes */
 .container {
   display: flex;
@@ -51,10 +55,13 @@ body {
 
 .left,
 .right {
+  display: flex;
   flex: 1;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.text {
+.text-app {
   font-weight: 500;
   font-size: 20px;
   color: var(--main-text-color);
@@ -64,6 +71,12 @@ body {
   font-weight: 500;
   font-size: 20px;
   color: var(--support-text);
+}
+
+.text {
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--main-text-color);
 }
 
 .text-2 {
@@ -77,13 +90,14 @@ body {
   font-size: 73px;
 }
 
-.title-2,
 .title-2-alt {
   font-weight: 700;
   font-size: 64px;
 }
 
 .title-2 {
+  font-weight: 800;
+  font-size: 73px;
   color: var(--main-text-color);
 }
 
@@ -129,6 +143,10 @@ body {
   box-shadow: 0px 3px 10px 1px #00000085;
 }
 
+.header-qna:hover {
+  box-shadow: 0px 3px 10px 1px #00000085;
+}
+
 .header-alt:hover {
   box-shadow: 0px 3px 10px 1px #00000085;
 }
@@ -149,12 +167,21 @@ button {
   align-items: end;
 }
 
-.insuarence .left {
-}
-
 .insuarence-body {
   color: var(--insuarence-header);
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
+}
+
+.insuarence-arrow {
+  position: absolute;
+  left: -63px;
+  top: 99px;
+}
+
+.insuarence .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .insuarence-btn {
@@ -199,11 +226,13 @@ button {
   background-size: cover;
 }
 
-.app-pic {
+.picture {
+  margin-right: 15%;
+  max-width: 100%;
 }
 
-ul {
-  list-style: none;
+.right .picture {
+  margin-left: 300px;
 }
 
 .footer-btns {
