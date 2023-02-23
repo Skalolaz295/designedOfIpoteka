@@ -12,7 +12,7 @@
   <body>
     <header class="header container">
       <div class="header block">
-        <div class="header header-logo">
+        <div id="main" class="header header-logo">
           <svg
             width="80"
             height="80"
@@ -50,11 +50,11 @@
             </defs>
           </svg>
         </div>
-        <button class="header header-main">Главная</button>
-        <button class="header header-services">Наши услуги</button>
-        <button class="header header-about">О приложении</button>
-        <button class="header header-qna">Ответы на вопросы</button>
-        <button class="header-alt contact">Контакты</button>
+        <a href="#main" class="header header-main">Главная</a>
+        <a href="#services" class="header header-services">Наши услуги</a>
+        <a href="#preferences" class="header header-about">О приложении</a>
+        <a href="#faq" class="header header-qna">Ответы на вопросы</a>
+        <a class="header-alt contact">+7 (495) 204-35-93</a>
       </div>
     </header>
     <div class="insuarence container">
@@ -84,7 +84,7 @@
         </div>
       </div>
     </div>
-    <div class="order container">
+    <div id="services" class="order container">
       <div class="order block">
         <div class="left">
           <img
@@ -124,7 +124,7 @@
       </div>
     </div>
     <div class="about container">
-      <div class="about block text-2">
+      <div id="preferences" class="about block text-2">
         <div class="col">
           Оформляйте документы за 7 минут, не выходя из дома.
         </div>
@@ -173,6 +173,13 @@
         </div>
       </div>
     </div>
+    <div class="answer container">
+      <div class="answer block">
+        <div id="faq" class="qna">
+          <p class="title-1 title-1-qna">Ответы на вопросы</p>
+        </div>
+      </div>
+    </div>
     <div class="vidget"></div>
     <footer class="footer container">
       <div class="footer block">
@@ -180,13 +187,13 @@
           <div class="footer-btns">
             <ul class="footer-left">
               <li>
-                <a href="#">Главная</a>
+                <a href="#main">Главная</a>
               </li>
               <li>
-                <a href="#">Наши услуги</a>
+                <a href="#services">Наши услуги</a>
               </li>
               <li>
-                <a href="#">О приложении</a>
+                <a href="#preferences">О приложении</a>
               </li>
               <li>
                 <a href="#">Контакты</a>
